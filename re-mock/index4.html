@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Iteration Statement></h1>
+    <h3>//Q1. (Find the number of digits) Take a number from the user and print the count of digits in that number.    </h3>
+     const Find_Digits = (N) => <br>
+    { <br>
+    count = 0; <br>
+    while (N>0){ <br>
+      N=parseInt(N/10); <br>
+      count++; <br>
+    } <br>
+    return count; <br>
+    };
+
+    <h3>//Q2. (Find the Fives.) Among all the digits from 0−9, PrepBuddy likes number 5. He has a number and wants you to find out the number of times 5 occurred in the given number.    </h3>
+    
+                const Find_Five = (N) =>{ <br>
+                    let n = N.toString() <br>
+                    sum=0; <br>
+                    for(let i=0;i < n.length;i++){ <br>
+                        if (n[i]==5){ <br>
+                          sum+=n[i].length <br>
+                        } <br>
+                    } <br>
+                    return sum; <br>
+                  }; <br>
+
+            <h3>//Q4. (Find the sum of the digits of a given number.) Write a program that takes a number from the user and get the sum of the digits present in the number. </h3>
+             const Number_Sum = (N) =>  <br>
+            { <br>
+             sum = 0; <br>
+                str = N.toString(); <br>
+                for (i = 0; i < str.length; i++) { <br>
+                  sum = sum + parseInt(str[i]); <br>
+                } <br>
+                return (sum); <br>
+            };
+
+            <h3>//Q5. (Print the Odds.) Write a program which takes a number from user and print all odd numbers in between 2 and N, but print 2 first.</h3>
+            A. const Print_Odd = (N) => { <br>
+                console.log(2); <br>
+                for (i = 2; i < = N; i++) { <br>
+                  if (i % 2 !== 0) { <br>
+                    console.log(i); <br>
+                  } <br>
+                } <br>
+              }; <br>
+
+              <h3>//Q6. (Print the Pattern.) Write a program which ask user for no of lines and print a pattern using an asterik .</h3>
+              const Print_pattern = (N) => <br>
+              { <br>
+                 let str = ""; <br>
+                      for (let i = 1; i < = N; i++) { <br>
+                        str = str + "*"; <br>
+                        console.log(str); <br>
+                      } <br>
+              };
+
+              <h3>//Q7. (Check whether a Number is a prime or not.) Write a program which takes a number from user and check whether number is prime number or not a prime number.            </h3>
+               const Prime_Check = (N) => <br> 
+              { <br>
+                count = 0; <br>
+                for (i=2;i { <br>
+                  for (i=1;i< =n;i++){ <br>
+                    if (i>0){ <br>
+                      console.log(i); <br>
+                    } <br>
+                  }   <br>
+                };
+
+                <h3>//Q8. (Print Numbers) You are given an integer N, and your task is to print all the integers starting from 1 till N (N inclusive)                </h3>
+                const printNumbers = (n) => { <br>
+                    for(let i=1;i< =n;i++){ <br>
+                      console.log((i)); <br>
+                    } <br>
+                  }; <br>
+
+
+                  <h3>//Q9. (Print the Table) Write a program which takes a number from user and print the table.                </h3>
+                   const Print_Table = (N) => { <br>
+                    for (i = 1; i < = 10; i++) { <br>
+                      str = N * i; <br>
+                      console.log(N + " * " + i + " = " + str); <br>
+                    } <br>
+                  }; <br>
+            
+               
+</body>
+</html>
